@@ -1,0 +1,161 @@
+:root {
+  --color-one: rgb(249, 250, 251);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  height: 80%;
+  display: flex;
+}
+
+.left {
+  width: 35%;
+  background-image: url(src/flowers.jpg);
+  background-size: cover;
+
+  position: relative;
+}
+
+.logo {
+  height: 13%;
+  background-color: black;
+  position: relative;
+  top: 20%;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  height: 100%;
+  width: 65%;
+  padding: 10px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-img {
+  height: 100%;
+  width: 30%;
+}
+
+.logo-name {
+  color: aliceblue;
+  text-align: center;
+}
+
+.img-info {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: small;
+  color: aliceblue;
+}
+
+.img-info a {
+  color: aliceblue;
+}
+
+.right {
+  width: 65%;
+  background-color: aquamarine;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  height: 33%;
+  background-color: var(--color-one);
+  position: relative;
+}
+
+.words {
+  position: absolute;
+  bottom: 0;
+  margin: 0 40px 40px;
+}
+
+.words p {
+  font-size: 25px;
+}
+
+.middle {
+  height: 37%;
+  background-color: rgb(255, 255, 255);
+}
+
+.mid-title {
+  margin: 10px 40px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  margin-left: 40px;
+}
+
+input,
+label {
+  display: block;
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 5px 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 160px;
+  border: auto solid #e5e7eb;
+}
+
+label {
+  padding-top: 15px;
+  text-transform: capitalize;
+}
+
+.bottom {
+  height: 30%;
+  background-color: var(--color-one);
+}
+
+.account-btn {
+  margin: 40px 40px 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(233, 159, 155);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.account-btn:hover {
+  cursor: pointer;
+  background-color: rgb(216, 121, 118);
+}
+
+.log-in {
+  margin: 10px 40px;
+}
