@@ -15,7 +15,8 @@ body {
 }
 
 .main-container {
-  height: 80%;
+  height: 100%;
+  width: 80%;
   display: flex;
 }
 
@@ -54,6 +55,7 @@ body {
 }
 
 .logo-name {
+  font-size: 30px;
   color: aliceblue;
   text-align: center;
 }
@@ -89,10 +91,12 @@ body {
   position: absolute;
   bottom: 0;
   margin: 0 40px 40px;
+  height: 100px;
+  overflow: scroll;
 }
 
 .words p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .middle {
@@ -107,13 +111,20 @@ body {
 }
 
 form {
-  position: relative;
+  height: 80%;
+  width: 100%;
   display: flex;
-  align-items: center;
+  overflow-y: scroll;
 }
 
-.column {
+form > .column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: inherit;
+  max-width: 550px;
   margin-left: 40px;
+  overflow-y: scroll;
 }
 
 input,
@@ -124,11 +135,11 @@ label {
 input {
   font-family: inherit;
   font-size: 100%;
-  padding: 5px 10px;
+  padding: 3px 5px 2px;
   margin: 0;
   box-sizing: border-box;
-  width: 160px;
   border: auto solid #e5e7eb;
+  width: 230px;
 }
 
 label {
