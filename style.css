@@ -1,5 +1,6 @@
 :root {
   --color-one: rgb(249, 250, 251);
+  --input-border: #e5e7eb;
 }
 
 * {
@@ -75,7 +76,6 @@ body {
 
 .right {
   width: 65%;
-  background-color: aquamarine;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -100,7 +100,7 @@ body {
 }
 
 .middle {
-  height: 37%;
+  height: 60%;
   background-color: rgb(255, 255, 255);
 }
 
@@ -111,17 +111,18 @@ body {
 }
 
 form {
-  height: 80%;
+  height: 77%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   overflow-y: scroll;
 }
 
-form > .column {
+form .column {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: inherit;
+  height: 70%;
   max-width: 550px;
   margin-left: 40px;
   overflow-y: scroll;
@@ -134,21 +135,41 @@ label {
 
 input {
   font-family: inherit;
-  font-size: 100%;
-  padding: 3px 5px 2px;
+  font-size: 130%;
+  padding: 3px 5px;
   margin: 0;
   box-sizing: border-box;
-  border: auto solid #e5e7eb;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
   width: 230px;
 }
 
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 5px 5px 5px var(--input-border);
+  outline: none;
+}
+
+.error {
+  border: 2px solid rgb(216, 121, 118);
+}
+
+.not-match::after {
+  display: block;
+  height: 20px;
+  width: auto;
+  color: red;
+  content: "*Passwords do not match!";
+}
+
 label {
-  padding-top: 15px;
-  text-transform: capitalize;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .bottom {
-  height: 30%;
+  height: 40%;
   background-color: var(--color-one);
 }
 

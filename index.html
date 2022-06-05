@@ -44,9 +44,9 @@
             <p>You <em>know</em> you want to.</p>
           </div>
         </section>
-        <section class="middle">
-          <div class="mid-title">Let's do this</div>
-          <form action="#">
+        <form>
+          <section class="middle">
+            <div class="mid-title">Let's do this</div>
             <div class="column">
               <div class="form-item">
                 <label for="first-name">First Name</label>
@@ -65,24 +65,32 @@
                 <input type="text" id="phone-number" name="phone-number" />
               </div>
               <div class="form-item">
-                <label for="pwd">password</label>
-                <input type="password" id="pwd" name="pwd" />
+                <label for="pwd">password*</label>
+                <input
+                  type="password"
+                  id="pwd"
+                  name="pwd"
+                  value="199"
+                  required
+                />
               </div>
               <div class="form-item">
-                <label for="cfm">confirm password</label>
-                <input type="text" id="cfm" name="cfm" />
+                <label for="cfm">confirm password*</label>
+                <input type="password" id="cfm" name="cfm" required />
               </div>
             </div>
-          </form>
-        </section>
-        <section class="bottom">
-          <div class="btn">
-            <button class="account-btn">Create Account</button>
-          </div>
-          <div class="log-in">
-            <p>Already have an account? <a href="#">Log in</a></p>
-          </div>
-        </section>
+          </section>
+          <section class="bottom">
+            <div class="btn">
+              <button type="button" class="account-btn" id="create-account">
+                Create Account
+              </button>
+            </div>
+            <div class="log-in">
+              <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+          </section>
+        </form>
       </section>
     </main>
     <script src="script.js"></script>
